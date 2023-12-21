@@ -13,5 +13,11 @@ function route_request($address){
             break;
     }
     
+
+    // ! Footer keeps sticking at the bottom of screen instead of bottom of page.
+    // ! It blocks access to some buttons and iframes.
+    // TODO : Fix footer at the bottom of each page instead of bottom of screen
+    $year = date("Y");
+    $name = "Smartbike";
     include_once("view/footer.php");
 }
